@@ -82,4 +82,4 @@ colnames(tidyData)[3:(ncol(tidyData))] <- paste("Avg",colnames(tidyData[,3:(ncol
 #---------------------------------------------------|
 #                 Save Tidy Data                    |
 #---------------------------------------------------|
-write.csv(tidyData, file="tidyUCIData.csv", row.names = FALSE)
+write.table(tidyData, file="tidyUCIData.txt", row.names = FALSE)
